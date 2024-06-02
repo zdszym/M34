@@ -1,0 +1,11 @@
+{
+    "stm32-for-vscode.makePath": false,
+    "makefile.makePath": "mingw32-make",
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "d:\\RM\\RM_code\\Standard_4_Cpp_Structure_ByRoboWalker_master\\Standard_4_Cpp_Structure_ByRoboWalker-master\\build",
+            "binaryPath": "d:\\RM\\RM_code\\Standard_4_Cpp_Structure_ByRoboWalker_master\\Standard_4_Cpp_Structure_ByRoboWalker-master\\build\\infantry.elf",
+            "binaryArgs": []
+        }
+    ]
+}
