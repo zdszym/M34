@@ -4,8 +4,6 @@
             "path": "."
         }
     ],
-    "settings": {
-        "EIDE.ARM.Option.AutoGenerateRTE_Components": false
-    },
+    "settings": {},
     "extensions": {}
 }
