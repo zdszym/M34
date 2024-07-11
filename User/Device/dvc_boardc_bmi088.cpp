@@ -1,3 +1,14 @@
+/**
+ * @file dvc_boardc_bmi088.cpp
+ * @author lez by yssickjgd
+ * @brief bmi088通讯协议
+ * @version 0.1
+ * @date 2024-07-1 0.1 24赛季定稿
+ *
+ * @copyright ZLLC 2024
+ *
+ */
+
 #include "dvc_boardc_bmi088.h"
 #include "dvc_boardc_bmi088_reg.h"
 #include "dvc_dwt.h"

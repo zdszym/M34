@@ -1,14 +1,12 @@
-///**
-// * @file drv_boarda_mpu6500.h
-// * @author yssickjgd (1345578933@qq.com)
-// * @brief A板的板级支持包
-// * @version 1.1
-// * @date 2023-08-29 0.1 23赛季定稿
-// * @date 2023-09-28 1.1 新增A板MPU6500的IST8310开关
-// *
-// * @copyright USTC-RoboWalker (c) 2022
-// *
-// */
+// /**
+//  * @file drv_bsp-boarda.h
+//  * @author lez by yssickjgd
+//  * @brief A板的板级支持包
+//  * @version 1.1
+//  * @date 2024-07-1 0.1 24赛季定稿
+//  * @date 202
+//  * @copyright ZLLC 2024
+//  */
 
 //#ifndef DRV_BOARDA_MPU6500_H
 //#define DRV_BOARDA_MPU6500_H

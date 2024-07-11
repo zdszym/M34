@@ -1,14 +1,13 @@
 /**
-  * @file       IST8310driver.c/h
-  * @brief      ist8310 is a 3-axis digital magnetometer, the file includes initialization function,
-  *             read magnetic field strength data function.
-  * @note       IST8310 only support I2C
-  * @history
-  *  Version    Date            Author          Modification
-  *  V1.0.0     Dec-26-2018     RM              1. ���
-  *
-  */
-
+ * @file dvc_boardc_ist8310.h
+ * @author lez by yssickjgd
+ * @brief 磁力计
+ * @version 0.1
+ * @date 2024-07-1 0.1 24赛季定稿
+ *
+ * @copyright ZLLC 2024
+ *
+ */
 #ifndef IST8310DRIVER_H
 #define IST8310DRIVER_H
 

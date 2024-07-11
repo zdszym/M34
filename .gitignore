@@ -12,19 +12,35 @@
 *.iex
 *.sct
 *.scvd
-*.uvguix
 *.dbg*
-*.uvguix.*
-*.mxproject
+
+*JLinkLog.txt
 *.jdebug
 *.jdebug.*
+
+
 *.axf
 *.exf
+*.elf
 
-!*.uvprojx
-!*.h
-!*.c
-!*.ioc
-!*.bin
-!*.hex
+#keil 工程配置文件
+*.uvoptx
+*.uvguix.*
+*.mxproject
+*.uvguix
+
+# 输出文件
+infantry/
+# keil debug配置文件
+DebugConfig/
+
+infantry.uvoptx
+!.vscode/
+
+
+
+
+
+
+
 

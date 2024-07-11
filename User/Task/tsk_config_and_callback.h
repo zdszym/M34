@@ -26,30 +26,32 @@
 #ifndef TSK_CONFIG_AND_CALLBACK_H
 #define TSK_CONFIG_AND_CALLBACK_H
 
+
 /* Includes ------------------------------------------------------------------*/
 
-#include "drv_bsp-boarda.h"
-#include "drv_tim.h"
-//#include "dvc_boarda-mpuahrs.h"
-#include "dvc_boardc_bmi088.h"
-#include "dvc_dmmotor.h"
-#include "dvc_serialplot.h"
-#include "ita_chariot.h"
-#include "dvc_boardc_ist8310.h"
-#include "dvc_imu.h"
-#include "CharSendTask.h"
-#include "GraphicsSendTask.h"
+#include "stm32f4xx_hal.h"
+
 /* Exported macros -----------------------------------------------------------*/
 
 /* Exported types ------------------------------------------------------------*/
 
 /* Exported variables --------------------------------------------------------*/
-extern Struct_USB_Manage_Object MiniPC_USB_Manage_Object;
+
 extern uint16_t pwmVal;
 /* Exported function declarations --------------------------------------------*/
 
-void Task_Init();
-void Task_Loop();
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+ 
+  void Task_Init();
+  void Task_Loop(); 
+ 
+#ifdef __cplusplus
+}
+#endif
+
 
 #endif
 

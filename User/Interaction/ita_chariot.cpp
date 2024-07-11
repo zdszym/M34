@@ -3,9 +3,9 @@
  * @author yssickjgd (yssickjgd@mail.ustc.edu.cn)
  * @brief 人机交互控制逻辑
  * @version 0.1
- * @date 2023-08-29 0.1 23赛季定稿
+ * @date 2024-07-1 0.1 24赛季定稿
  *
- * @copyright USTC-RoboWalker (c) 2022
+ * @copyright ZLLC 2024
  *
  */
 
@@ -351,7 +351,7 @@ void Class_Chariot::Control_Gimbal()
 {
     //角度目标值
     float tmp_gimbal_yaw, tmp_gimbal_pitch;
-    //遥控器摇杆值  
+    //遥控器摇杆值
     float dr16_y, dr16_r_y;
     //获取当前角度值
     tmp_gimbal_yaw = Gimbal.Get_Target_Yaw_Angle();

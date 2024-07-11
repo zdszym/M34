@@ -1,11 +1,11 @@
 /**
- * @file dvc_dmmotor.h
- * @author yssickjgd (1345578933@qq.com)
- * @brief ?????????????
+ * @file dvc_LKmotor.h
+ * @author lez
+ * @brief lk电机配置与操作
  * @version 0.1
- * @date 2023-08-30 0.1 ????
+ * @date 2024-07-1 0.1 24赛季定稿
  *
- * @copyright USTC-RoboWalker (c) 2022
+ * @copyright ZLLC 2024
  *
  */
 

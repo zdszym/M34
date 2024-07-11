@@ -1,12 +1,10 @@
 /**
  * @file tsk_config_and_callback.cpp
- * @author yssickjgd (yssickjgd@mail.ustc.edu.cn)
+ * @author lez by yssickjgd
  * @brief 临时任务调度测试用函数, 后续用来存放个人定义的回调函数以及若干任务
  * @version 0.1
- * @date 2023-08-29 0.1 23赛季定稿
- *
- * @copyright USTC-RoboWalker (c) 2022
- *
+ * @date 2024-07-1 0.1 24赛季定稿
+ * @copyright ZLLC 2024
  */
 
 /**
@@ -38,6 +36,18 @@
 /* Includes ------------------------------------------------------------------*/
 
 #include "tsk_config_and_callback.h"
+#include "drv_bsp-boarda.h"
+#include "drv_tim.h"
+//#include "dvc_boarda-mpuahrs.h"
+#include "dvc_boardc_bmi088.h"
+#include "dvc_dmmotor.h"
+#include "dvc_serialplot.h"
+#include "ita_chariot.h"
+#include "dvc_boardc_ist8310.h"
+#include "dvc_imu.h"
+#include "CharSendTask.h"
+#include "GraphicsSendTask.h"
+#include "drv_usb.h"
 #include "usbd_cdc.h"
 #include "usbd_cdc_if.h"
 #include "config.h"
@@ -58,9 +68,6 @@ Class_Chariot chariot;
 
 //串口裁判系统对象
 Class_Serialplot serialplot;
-
-//上位机USB通讯对象
-Struct_USB_Manage_Object MiniPC_USB_Manage_Object = {0};
 
 /* Private function declarations ---------------------------------------------*/
 
@@ -397,7 +404,7 @@ void Task1ms_TIM5_Callback()
  * @brief 初始化任务
  *
  */
-void Task_Init()
+extern "C" void Task_Init()
 {  
 
     DWT_Init(168);
@@ -448,7 +455,7 @@ void Task_Init()
 
     /********************************* 设备层初始化 *********************************/
 
-     //设备层集成在交互层初始化中，没有显视地初始化
+    //设备层集成在交互层初始化中，没有显视地初始化
 
     /********************************* 交互层初始化 *********************************/
 
@@ -464,7 +471,7 @@ void Task_Init()
  * @brief 前台循环任务
  *
  */
-void Task_Loop()
+extern "C" void Task_Loop()
 {
     #ifdef GIMBAL
         float now_angle_yaw = chariot.Gimbal.Motor_Yaw.Get_True_Angle_Yaw();

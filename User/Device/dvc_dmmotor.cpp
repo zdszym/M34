@@ -1,11 +1,11 @@
 /**
  * @file dvc_dmmotor.cpp
- * @author yssickjgd (yssickjgd@mail.ustc.edu.cn)
+ * @author lez by yssickjgd
  * @brief 达妙电机配置与操作
  * @version 0.1
- * @date 2023-08-30 0.1 初稿机
+ * @date 2024-07-1 0.1 24赛季定稿
  *
- * @copyright USTC-RoboWalker (c) 2022
+ * @copyright ZLLC 2024
  *
  */
 

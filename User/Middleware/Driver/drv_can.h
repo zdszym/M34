@@ -1,16 +1,21 @@
 /**
  * @file drv_can.h
- * @author yssickjgd (1345578933@qq.com)
- * @brief 仿照SCUT-Robotlab改写的CAN通信初始化与配置流程
+ * @author lez by yssickjgd
+ * @brief CAN通信初始化与配置流程
  * @version 0.1
- * @date 2022-08-02
+ * @date 2024-07-1 0.1 24赛季定稿
  *
- * @copyright USTC-RoboWalker (c) 2022
+ * @copyright ZLLC 2024
  *
  */
 
 #ifndef DRV_CAN_H
 #define DRV_CAN_H
+
+#ifdef __cplusplus
+extern "C"
+{
+#endif
 
 /* Includes ------------------------------------------------------------------*/
 
@@ -126,6 +131,10 @@ void CAN_Init(CAN_HandleTypeDef *hcan, CAN_Call_Back Callback_Function);
 uint8_t CAN_Send_Data(CAN_HandleTypeDef *hcan, uint16_t ID, uint8_t *Data, uint16_t Length);
 
 void TIM_CAN_PeriodElapsedCallback();
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif
 

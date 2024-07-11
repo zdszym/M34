@@ -1,16 +1,20 @@
 /**
- * @file drv_uart.h
- * @author yssickjgd (1345578933@qq.com)
- * @brief 仿照SCUT-Robotlab改写的UART通信初始化与配置流程
+ * @file drv_usb.h
+ * @author lez by yssickjgd
+ * @brief  USB铏氭嫙涓插彛閫氫俊鍒濆鍖栦笌閰嶇疆娴佺▼
  * @version 0.1
- * @date 2023-08-29 0.1 23赛季定稿
+ * @date 2024-07-1 0.1 24璧涘瀹氱ǹ
  *
- * @copyright USTC-RoboWalker (c) 2022
+ * @copyright ZLLC 2024
  *
  */
 
 #ifndef DRV_USB_H
 #define DRV_USB_H
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 /* Includes ------------------------------------------------------------------*/
 
@@ -18,21 +22,21 @@
 
 /* Exported macros -----------------------------------------------------------*/
 
-// 缓冲区字节长度
+// 锟斤拷锟斤拷锟斤拷锟街节筹拷锟斤拷
 #define USB_BUFFER_SIZE 48
 
 /* Exported types ------------------------------------------------------------*/
 
 
 /**
- * @brief USB通信接收回调函数数据类型
+ * @brief USB通锟脚斤拷锟秸回碉拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷
  *
  */
 typedef void (*USB_Call_Back)(uint8_t *Buffer, uint32_t Length);
 
 
 /**
- * @brief USB通信处理结构体
+ * @brief USB通锟脚达拷锟斤拷锟结构锟斤拷
  *
  */
 struct Struct_USB_Manage_Object
@@ -46,11 +50,17 @@ struct Struct_USB_Manage_Object
 
 /* Exported variables --------------------------------------------------------*/
 
+extern struct Struct_USB_Manage_Object MiniPC_USB_Manage_Object;
 
 /* Exported function declarations --------------------------------------------*/
 
-void USB_Init(Struct_USB_Manage_Object* MiniPC_USB_Manage_Object, USB_Call_Back __Callback_Function);
-void TIM_USB_PeriodElapsedCallback(Struct_USB_Manage_Object* MiniPC_USB_Manage_Object);
+void USB_Init(struct Struct_USB_Manage_Object* MiniPC_USB_Manage_Object, USB_Call_Back __Callback_Function);
+void TIM_USB_PeriodElapsedCallback(struct Struct_USB_Manage_Object* MiniPC_USB_Manage_Object);
+
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif
 

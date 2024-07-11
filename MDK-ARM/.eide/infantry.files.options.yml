@@ -15,8 +15,17 @@
 #
 ##########################################################################################
 
-version: "1.0"
+version: '1.0'
+
+#
+# for source files with filesystem paths
+#
 files:
-    USB_DEVICE/Target/usbd_conf.c: --c99
+#   './test/**/*.c': --c99
+
+#
+# for source files with virtual paths
+#
 virtualPathFiles:
-    <virtual_root>/Middlewares/USB_Device_Library/usbd_cdc.c: --c99
+#   'virtual_folder/**/*.c': --c99
+

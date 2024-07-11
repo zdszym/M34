@@ -1,16 +1,20 @@
 /**
  * @file drv_uart.h
- * @author yssickjgd (1345578933@qq.com)
- * @brief 仿照SCUT-Robotlab改写的UART通信初始化与配置流程
+ * @author lez by yssickjgd
+ * @brief UART通信初始化与配置流程
  * @version 0.1
- * @date 2023-08-29 0.1 23赛季定稿
+ * @date 2024-07-1 0.1 24赛季定稿
  *
- * @copyright USTC-RoboWalker (c) 2022
- *
+ * @copyright ZLLC 2024
+ * 
  */
 
 #ifndef DRV_UART_H
 #define DRV_UART_H
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 /* Includes ------------------------------------------------------------------*/
 
@@ -70,6 +74,10 @@ void UART_Init(UART_HandleTypeDef *huart, UART_Call_Back Callback_Function, uint
 uint8_t UART_Send_Data(UART_HandleTypeDef *huart, uint8_t *Data, uint16_t Length);
 
 void TIM_UART_PeriodElapsedCallback();
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif
 

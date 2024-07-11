@@ -1,12 +1,10 @@
 /**
- * @file drv_i2c.h
- * @author yssickjgd (yssickjgd@mail.ustc.edu.cn)
- * @brief 仿照SCUT-Robotlab改写的ADC初始化与配置流程
+ * @file drv_adc.h
+ * @author lez by yssickjgd
+ * @brief ADC初始化与配置流程
  * @version 0.1
- * @date 2023-08-29 0.1 23赛季定稿
- *
- * @copyright USTC-RoboWalker (c) 2023
- *
+ * @date 2024-07-1 0.1 24赛季定稿
+ * @copyright ZLLC 2024
  */
 
 #ifndef DRV_ADC_H

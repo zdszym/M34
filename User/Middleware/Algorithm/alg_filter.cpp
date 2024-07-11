@@ -1,12 +1,11 @@
 /**
  * @file alg_filter.cpp
- * @author yssickjgd (1345578933@qq.com)
+ * @author lez by yssickjgd
  * @brief 滤波器
- * @version 1.1
- * @date 2023-08-29 0.1 23赛季定稿
- * @date 2023-09-25 1.1 可自定义滤波器阶数
- *
- * @copyright Copyright (c) 2023
+ * @version 0.1
+ * @date 2024-07-1 0.1 24赛季定稿
+ * 
+ * @copyright ZLLC 2024
  *
  */
 

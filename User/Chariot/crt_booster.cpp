@@ -1,11 +1,11 @@
 /**
  * @file crt_booster.cpp
- * @author yssickjgd (yssickjgd@mail.ustc.edu.cn)
- * @brief 发射机构电控
+ * @author lez by wanghongxi
+ * @brief 发射机构
  * @version 0.1
- * @date 2023-08-29 0.1 23赛季定稿
+ * @date 2024-07-1 0.1 24赛季定稿
  *
- * @copyright USTC-RoboWalker (c) 2022
+ * @copyright ZLLC 2024
  *
  */
 

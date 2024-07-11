@@ -1,18 +1,13 @@
-//=====================================================================================================
-// MahonyAHRS.c
-//=====================================================================================================
-//
-// Madgwick's implementation of Mayhony's AHRS algorithm.
-// See: http://www.x-io.co.uk/node/8#open_source_ahrs_and_imu_algorithms
-//
-// Date			Author			Notes
-// 29/09/2011	SOH Madgwick    Initial release
-// 02/10/2011	SOH Madgwick	Optimised for reduced CPU load
-//
-//=====================================================================================================
-
-//---------------------------------------------------------------------------------------------------
-// Header files
+/**
+ * @file dvc_imu.cpp
+ * @author lez by wanghongxi
+ * @brief imu
+ * @version 0.1
+ * @date 2024-07-1 0.1 24赛季定稿
+ *
+ * @copyright ZLLC 2024
+ *
+ */
 
 #include "dvc_imu.h"
 

@@ -1,16 +1,20 @@
 /**
  * @file drv_tim.h
- * @author yssickjgd (1345578933@qq.com)
- * @brief 仿照SCUT-Robotlab改写的TIM定时器初始化与配置流程
+ * @author lez by yssickjgd
+ * @brief TIM定时器初始化与配置流程, 仅有中断回调函数参9
  * @version 0.1
- * @date 2023-08-29 0.1 23赛季定稿
+ * @date 2024-07-1 0.1 24赛季定稿
  *
- * @copyright USTC-RoboWalker (c) 2022
+ * @copyright ZLLC 2024
  *
  */
 
 #ifndef DRV_TIM_H
 #define DRV_TIM_H
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 /* Includes ------------------------------------------------------------------*/
 
@@ -64,6 +68,10 @@ extern Struct_TIM_Manage_Object TIM14_Manage_Object;
 /* Exported function declarations --------------------------------------------*/
 
 void TIM_Init(TIM_HandleTypeDef *htim, TIM_Call_Back Callback_Function);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif
 

@@ -1,11 +1,11 @@
 /**
- * @file ita_chariot.h
- * @author yssickjgd (yssickjgd@mail.ustc.edu.cn)
- * @brief �˻����������߼�
+ * @file config.h
+ * @author lez
+ * @brief 工程配置文件
  * @version 0.1
- * @date 2023-08-29 0.1 23��������
+ * @date 2024-07-1 0.1 24赛季定稿
  *
- * @copyright USTC-RoboWalker (c) 2022
+ * @copyright ZLLC 2024
  *
  */
 

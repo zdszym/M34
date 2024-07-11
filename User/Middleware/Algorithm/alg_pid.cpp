@@ -1,11 +1,11 @@
 /**
  * @file alg_pid.cpp
- * @author yssickjgd 1345578933@qq.com
+ * @author lez by yssickjgd
  * @brief PID算法
  * @version 0.1
- * @date 2023-08-29 0.1 23赛季定稿
+ * @date 2024-07-1 0.1 24赛季定稿
  *
- * @copyright USTC-RoboWalker (c) 2022
+ * @copyright ZLLC 2024
  *
  */
 

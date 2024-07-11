@@ -1,17 +1,20 @@
 /**
  * @file drv_spi.h
- * @author yssickjgd (1345578933@qq.com)
- * @brief 仿照SCUT-Robotlab改写的SPI通信初始化与配置流程
+ * @author lez by yssickjgd
+ * @brief SPI通信初始化与配置流程
  * @version 1.1
- * @date 2023-08-29 0.1 23赛季定稿
- * @date 2023-09-13 1.1 加入SPI配置操作
+ * @date 2024-07-1 0.1 24赛季定稿
  *
- * @copyright USTC-RoboWalker (c) 2022
+ * @copyright ZLLC 2024
  *
  */
 
 #ifndef DRV_SPI_H
 #define DRV_SPI_H
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 /* Includes ------------------------------------------------------------------*/
 
@@ -70,6 +73,11 @@ void SPI_Init(SPI_HandleTypeDef *hspi, SPI_Call_Back Callback_Function);
 uint8_t SPI_Send_Receive_Data(SPI_HandleTypeDef *hspi, GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin, uint16_t Tx_Length, uint16_t Rx_Length);
 
 void TIM_SPI_PeriodElapsedCallback();
+
+#ifdef __cplusplus
+}
+#endif
+
 
 #endif
 
