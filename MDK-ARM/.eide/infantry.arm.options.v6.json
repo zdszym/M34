@@ -24,6 +24,6 @@
         "xo-base": "",
         "ro-base": "",
         "rw-base": "",
-        "$disableOutputTask": false
+        "$disableOutputTask": true
     }
 }

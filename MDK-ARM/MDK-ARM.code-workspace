@@ -4,10 +4,6 @@
             "path": "."
         }
     ],
-    "settings": {
-        "files.associations": {
-            "dvc_graphicssendtask.h": "c"
-        }
-    },
+    "settings": {},
     "extensions": {}
 }
