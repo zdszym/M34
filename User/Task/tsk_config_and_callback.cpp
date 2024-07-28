@@ -471,7 +471,7 @@ extern "C" void Task_Init()
  * @brief 前台循环任务
  *
  */
-extern "C" void Task_Loop()
+ extern "C" void Task_Loop()
 {
     #ifdef GIMBAL
         float now_angle_yaw = chariot.Gimbal.Motor_Yaw.Get_True_Angle_Yaw();

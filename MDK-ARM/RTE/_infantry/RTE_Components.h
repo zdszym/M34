@@ -3,8 +3,8 @@
  * Auto generated Run-Time-Environment Configuration File
  *      *** Do not modify ! ***
  *
- * Project: 'INFANTRY' 
- * Target:  'INFANTRY' 
+ * Project: 'infantry' 
+ * Target:  'infantry' 
  */
 
 #ifndef RTE_COMPONENTS_H
