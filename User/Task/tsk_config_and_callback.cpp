@@ -208,9 +208,9 @@ void Gimbal_Device_CAN2_Callback(Struct_CAN_Rx_Buffer *CAN_RxMessage)
         chariot.CAN_Gimbal_Rx_Chassis_Callback();
     }
     break;
-    case (0x208):   //保留can2对6020编码器的接口
+    case (0x208):   
     {
-        chariot.Gimbal.Motor_Yaw.CAN_RxCpltCallback(CAN_RxMessage->Data);
+       
     }
     break;
     case (0x204):
@@ -218,9 +218,9 @@ void Gimbal_Device_CAN2_Callback(Struct_CAN_Rx_Buffer *CAN_RxMessage)
         
     }
     break;
-    case (0x205):
+    case (0x205)://保留can2对6020编码器的接口
     {
-       
+        chariot.Gimbal.Motor_Yaw.CAN_RxCpltCallback(CAN_RxMessage->Data);
     }
     break;
     case (0x206):
